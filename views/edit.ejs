@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit  </title>
+</head>
+<body>
+    <h1> Edit Listing</h1>
+    <nav>
+        <a href="/dashboard"> Back to Dashboard </a>  <br>
+        <a href="/posts"> Back to Lost and Found Posts </a> <br>
+        <a href="/posts/new"> Create </a> <br>
+    </nav>
+
+    <form action="/posts/<%=post._id%>?_method=PUT" method="POST">
+    Title: <input type=“text” name='title' /><br />
+    Description: <input type=“text” name='description' /><br />
+    Img: <input type=“text” name='img' value='<%=post.img%>'/><br>
+    Location: <input type=“text” name='location'  /><br />
+
+    <input type="submit" name="" value="Make Changes" />
+
+    </form>
+ 
+    
+</body>
+</html>

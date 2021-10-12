@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found Posts</title>
+</head>
+<body>
+    <h1> Lost and Found </h1>
+    <nav>
+        <a href="/dashboard"> Back to Dashboard </a>  <br>
+        <a href="/posts/new"> Add a New Post </a>
+    </nav>
+
+    <li> 
+        <% posts.forEach(post => { %> 
+            <form method="POST" action="/posts/<%= post._id %>?_method=DELETE">
+            <input type="submit" value="DELETE"> 
+            </form>
+
+            
+           
+        <a href="/posts/<%= post._id%>">
+            <%= post.title %> view item details
+        </a>&nbsp;  &nbsp; &nbsp; &nbsp;   &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp
+
+        <%= post.location %> &nbsp;  &nbsp; &nbsp; &nbsp;   &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; 
+        <%=post.createdAt %>
+    </li>
+    <% }); %>
+   
+
+
+</body>
+</html>
+
+
+
+

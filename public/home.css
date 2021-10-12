@@ -1,0 +1,48 @@
+
+body { 
+    background: white;
+}
+
+#name {
+    color: pink;
+    font-size: 80px;
+    float: left;
+    display: flex;
+}
+
+#logo {
+    height: 70px;
+    float: left;
+    display: block;
+    align-items: center;
+    background-position: 00% 0%;
+    
+}
+
+#top {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 34.8px;
+    color: white;
+    word-spacing: 75px;
+    text-transform: uppercase;
+  
+   
+    
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    display: block;
+
+    text-align: right;
+ 
+
+}
+
+#login, #signup {
+    color: orange;
+    
+}
