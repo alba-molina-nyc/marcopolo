@@ -26,6 +26,8 @@ postRouter.get("/posts", (req, res) => {
     })
 })
 
+
+
 //          New
 
 postRouter.get("/posts/new", (req, res) => {
@@ -78,17 +80,27 @@ postRouter.get("/posts/:id/edit", (req, res) => {
     })
         });
 
-
-  
+postRouter.get('/posts/search', (req, res) => {
+    if(req.query.title) {
+        Post.find({title: { $regex: req.query.title }}, (err, posts) => {
+            res.json(posts);
+        });
+    } else {
+        res.render('search.ejs');
+    }
+});
 // Show 
 
 postRouter.get("/posts/:id", (req, res) => {
     Post.findById(req.params.id).populate("owner").exec((err, foundPost) => {
         res.render("show.ejs", {
-            post: foundPost,
+            post: foundPost
         });
 
     })
 })
+
+
+// Search/Router
 
 module.exports = postRouter;
