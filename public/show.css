@@ -1,0 +1,111 @@
+header {
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none solid;
+    word-spacing: 0px;
+    background-color: rgb(225, 223, 0);
+    background-position: 0% 0%;
+    height: 100px;
+    width: 1300px;
+    position: fixed;
+    top: 0px;
+    bottom: 708px;
+    right: 0px;
+    left: 0px;
+    display: block;
+    z-index: 100;
+    transform: matrix(1,0,0,0,1,0,0);
+    transition: 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+    outline: silver dashed 1px;
+    box-sizing: border-box;
+    box-shadow: white 0px 1px 4px 0px;
+   
+}
+
+
+
+#lnfp, #rckt, #bck, #home {
+        font-size: 28px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: 70px;
+        white-space: nowrap;
+        background-position: 0% 0%;
+        height: 200px;
+        width: 200px;
+        text-align: center;
+        margin: 2px 8px 2px 8px;
+        color: black;
+        float: left;
+        display: inline;
+        box-sizing: border-box; 
+        margin: 10px 100px 150px 0;
+        align-items: right;
+    }
+
+
+
+#deletebtn, #editbtn {
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 18px;
+    text-align: center;
+    vertical-align: bottom;
+    word-spacing: 0px;
+    background: green;
+    background-position: 0% 0%;
+    height: 38px;
+    width: 97px;
+    min-height: auto;
+    min-width: auto;
+    position: relative;
+}
+
+#post {
+    height: 500px;
+    width: 500px;
+    display: block;
+    box-sizing: border-box;
+}
+
+#img {
+    height: 250px;
+    width: 375px;
+}
+
+#social {
+    height: 56px;
+    width: 375px;
+}
+
+#like, #share, #comment {
+    width: 120px;
+}
+
+#addcomment{ 
+    height: 20px;
+    width: 372px;
+
+}
+
+#header {
+    font-family: serif;
+    font-size: 48px;
+    line-height: 50px;
+    text-align: center;
+    margin: 150px -600px 15px 0;
+    text-transform: uppercase;
+}
+
+#description {
+    font-family: Helvetica;
+    margin: 30px -630px 15px 0;
+}
+
+#appPic {
+    width: 300px;
+    height: 200px;
+}
+

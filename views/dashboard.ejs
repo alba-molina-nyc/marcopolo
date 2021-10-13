@@ -4,20 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
     <title>Hello <%= user.username %></title>
 </head>
 <body>
-    <header>
-        <h1>Hello <%= user.username %> welcome to Marco Polo</h1>
-        <nav>       
-            <a href="/dashboard/<%= user._id %>"> Created By Me </a>   &nbsp;  &nbsp; &nbsp; &nbsp;   &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; 
-            <a href="/posts/new"> Create </a>   &nbsp;  &nbsp; &nbsp; &nbsp;   &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; 
-            <a href="/logout">Logout</a> 
-        </nav>
-    </header>
+    <h4> Hello <%= user.username %> welcome to Marco Polo</h4>
+<header>
+    <img src="logo.png" id="logo">
+    <div id="home"><a href="/dashboard"> ⌂ </a>   </div>
+    <a href="/resources"id="rckt">🚀 </a>  
+    <div>
+        <a href="/psettings"id="psettings">⚙️</a>    
+        <a href="/logout" id="lo">Logout</a>  
+    </div>
+    
+</header>
 
-   <nav> <br>
-    <a href="/posts"> Lost and Found Posts </a>    <br>
+<div> 
+    <input type="search" id="globalsearchall" value="🔎">
+</div>
+
+<div id="nav-container"> 
+    <a href="/dashboard/<%= user._id %>" id="cbm">My Posts</a>     <br>
+
+    <a href="/posts" id="allnfp">All Posts</a>  
+</div>
+
+<button id="create"> <a href="/posts/new""> + create  </a>    </button>        
+
+   
+    
+        
+        
+        
+
+
+
+
+
+   
 </nav>
 </body>
 </html>

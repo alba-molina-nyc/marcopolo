@@ -67,13 +67,18 @@ router.get('/dashboard', isAuthenticated, (req, res) => {
 
 router.get('/dashboard/:id', isAuthenticated, (req, res) => {
     Post.find({owner: req.params.id}, (error, allPosts) => {
-        res.render("index.ejs", {
+        res.render("indexbyme.ejs", {
             posts: allPosts,
         })
     })
 })
-    
-        
+
+//settings route to change username and password
+router.get('/psettings', isAuthenticated, (req, res) => {
+    User.findById(req.session.user, (err, user) => {
+        res.render('psettings.ejs', { user });
+    });
+});
 
 
 

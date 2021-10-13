@@ -91,6 +91,4 @@ postRouter.get("/posts/:id", (req, res) => {
     })
 })
 
-
-
 module.exports = postRouter;

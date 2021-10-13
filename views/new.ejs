@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/newEdit.css">
     <title>Create a New Post</title>
 </head>
 <body>
-    <nav> 
-        <a href="/dashboard"> Back to Home</a>
-    </nav>
+    <header> 
+        <a href="/dashboard"id="home"> ⌂ </a>  
+        <a href="/posts/new"id="lnfp"> ✎ </a>   
+        <a href="/resources"id="rckt"> 🚀 </a>  
+    </header>
 <h1> Add a New Item to Your Lost and Found List 📦</h1>
+<div id="sign"> 
 <form action="/posts" method="POST">
-    Title: <input type="text" name="title" /> <br>
-    Description: <input type="text" name="description" /> <br>
-    Img: <input type="text" name="img" /> <br>
-    Location: <input type="text" name="location" /> <br>
-<input type="submit" name="" value="Add Listing" />
+    Title: <input type="text" name="title" id="title" /> <br>
+    Description: <input type="text" name="description" id="description" /> <br>
+    Img: <input type="text" name="img" id="img"/> <br>
+    Location: <input type="text" name="location" id="location" /> <br>
+<input type="submit" name="" value="Add Listing" id="btn"/>
+
 
 
 
 </form>
+</div>
     
 </body>
 

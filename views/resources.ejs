@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <header>
-    <img src="logo.png" id="logo">
+
     <nav>
     <div id="top">
         <a href="/platform">platform</a>
@@ -19,7 +19,7 @@
             <% if(user) { %>
                 <a href="/logout">Logout</a>
             <% } else { %>
-                <button> <a href="/login" id="login">Login</a></button>
+              <a href="/login" id="login">Login</a>
                 <a href="/signup" id="signup">Signup</a>
             <% } %>
         </nav>
@@ -28,5 +28,10 @@
 </header>
 <body>
     
+    <img src="app-pic.png" id="appPic">
 </body>
+<div class="copyright-container">
+    <footer>
+        <p>Copyright &copy; Alba <span id=“year”></span> All Rights Reserved<p></p>
+    </footer>
 </html>

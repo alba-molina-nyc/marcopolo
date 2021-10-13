@@ -1,0 +1,115 @@
+header {
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-align:right;
+    text-decoration: none solid;
+    word-spacing: 24px;
+    background-color: rgb(255,255,255);
+    background-position: 0% 0%;
+    height: 60px;
+    width: 1100px;
+    transform: matrix(1,0,0,0,1,0,0);
+    transition: 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+    outline: silver dashed 1px;
+    box-sizing: border-box;
+    box-shadow: grey 0px 1px 4px 0px;
+}
+#logo {
+    height: 70px;
+    float: left;
+    display: block;
+    align-items: center;
+    background-position: 00% 0%;
+    
+}
+#home {
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 70px;
+    white-space: nowrap;
+    background-position: 0% 0%;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    margin: 2px 8px 2px 8px;
+    color: black;
+    float: left;
+    display: inline;
+    box-sizing: border-box; 
+}
+
+
+
+#rckt {
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 70px;
+    white-space: nowrap;
+    background-position: 0% 0%;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    margin: 2px 8px 2px 8px;
+    color: black;
+    float: left;
+    display: inline;
+    box-sizing: border-box; 
+
+}
+
+
+#globalsearchall {
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 30px;
+    word-spacing: 0px;
+    background-color: white;
+    height: 18px;
+    width: 285px;
+    display: block;
+    cursor: text;
+    transform: matrix(1,0,0,0,1,0,0);
+    transition: 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+    box-sizing: border-box;
+    box-shadow: grey 2px 2px 2px 2px;
+    margin: 10px 0 0px 820px;
+
+
+}
+
+
+#create {
+
+    font-family: Tahoma;
+    font-size: 19px;
+    font-weight: 900px;
+    line-height: 30px;
+    text-align: center;
+    word-spacing: 0px;
+    background-color: hotpink;
+    color: white;
+    padding: 0 20px 2px 16px;
+    display: flex;
+    box-sizing: border-box;
+    transform: matrix(1,0,0,0,1,0,0);
+    transition: 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+    box-sizing: border-box;
+    box-shadow: grey 4px 4px 4px 4px;
+    margin: 150px 0 0px 500px;
+
+
+}
+
+#cbm, #allnfp {
+    display: flex;
+    font-size: 14px;
+    float: left;
+    white-space: nowrap;
+    padding: 10px 2000px 0px 30px;
+    display: flex;
+    box-sizing: border-box;
+  
+}

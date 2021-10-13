@@ -4,32 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="/show.css">
     <title><%=post.title %></title>
 </head>
-<body>
-    <nav>
-        <a href="/dashboard"> Back to Dashboard </a>  <br>
-        <a href="/posts"> Back to Lost and Found Posts </a> <br>
-        <a href="/posts/new"> Create </a> <br>
-    </nav>
-    <h1> <%=post.title %></h1>
+<body> 
+<header> 
+    <div class="scroller"> 
+        <a href="/dashboard"id="home"> ⌂ </a>  
+        <a href="/posts" id="bck"> Back </a>
+        <a href="/resources"id="rckt"> 🚀 </a>  
+  </div>
+</header>
 
-    <p> <%=post.description %></p>
-    <img src= "<%= post.img %>">
+    <div id="post"> 
 
-    </a>
+    <h1 id="header"> <%=post.title %> </h1>
+
+<a href="/posts/<%= post._id%>/edit"> EDIT POST </a> 
+   
+
+<p id="description"> <%=post.description %> <br>
+     <img src= "<%= post.img %>" id="img">
+    <div id="social">
+        <button id="like"> Like</button>
+        <button id="comment"> Comment</button>
+        <button id="share"> Share</button>
+        <div> 
+            <input type="comment" id="addcomment" value="add a comment...">
+        </div>
+    </div>
+</p>
+
+    
     <h1> <%=post.location %></h1>
     <h6> <%=post.name %></h6>
 
     <p> 
         Created: <%=post.createdAt %> <br>
         Updated: <%=post.updatedAt %> <br>
-        Owner: <%=post.owner.username %> <br>
      </p>
+     <form method="POST" action="/posts/<%= post._id %>?_method=DELETE">
+        <input type="submit" value="DELETE" id="deletebtn"> 
+        </form>
+    </div>
 
-     <a href="/posts/<%= post._id%>/edit"> Edit </a> <br>
-   
+
 
 </body>
 </html>

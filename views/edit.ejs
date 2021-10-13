@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/newEdit.css">
     <title>Edit  </title>
 </head>
 <body>
+    
+    <header> 
+        <a href="/dashboard"id="home"> ⌂ </a>  
+        <a href="/posts/new"id="lnfp"> ✎ </a>   
+        <a href="/resources"id="rckt"> 🚀 </a>  
+    </header>
     <h1> Edit Listing</h1>
-    <nav>
-        <a href="/dashboard"> Back to Dashboard </a>  <br>
-        <a href="/posts"> Back to Lost and Found Posts </a> <br>
-        <a href="/posts/new"> Create </a> <br>
-    </nav>
-
+    <a href="/posts/<%= post._id%>">
+        <img src= "<%= post.img %>" alt="avatar" id="img">
+    <div id="sign"> 
     <form action="/posts/<%=post._id%>?_method=PUT" method="POST">
-    Title: <input type=“text” name='title' /><br />
-    Description: <input type=“text” name='description' /><br />
-    Img: <input type=“text” name='img' value='<%=post.img%>'/><br>
-    Location: <input type=“text” name='location'  /><br />
+    Title: <input type=“text” name='title' id="title" /><br />
+    Description: <input type=“text” name='description' id="description" id="title" /><br />
+    Img: <input type=“text” name='img' value='<%=post.img%>' id="img"/><br>
+    Location: <input type=“text” name='location' id="location"  /><br />
 
-    <input type="submit" name="" value="Make Changes" />
+    <input type="submit" name="" value="Make Changes" id="btn"/>
 
     </form>
- 
-    
+</div>
+
 </body>
 </html>

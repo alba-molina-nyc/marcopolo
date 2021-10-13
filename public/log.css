@@ -1,0 +1,47 @@
+body { 
+    background: rgb(255,255,224);
+}
+
+#sign {
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: left;
+    width: 608px;
+    height: 300px;
+    border: 15px solid rgb(85, 11, 53);
+    padding: 50px;
+    margin: 275px;
+    transform: matrix(1,0,0,0,1,0,0);
+    transition: 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+    box-sizing: border-box;
+    box-shadow: grey 8px 8px 8px 8px; 
+    margin: 100px 0 0 250px;
+      }
+
+#btn {
+    color: rgb(85, 11, 53)
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 18px;
+    text-align: center;
+    background-color: rgb(225, 223, 0);
+    height: 38px;
+    width: 97px;
+    position: relative;
+    transform: matrix(1,0,0,0,1,0,0);
+    transition: 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+    box-sizing: border-box;
+    box-shadow: grey 4px 4px 4px 4px; 
+}
+
+#username, #password  {
+    display: block;
+    cursor: text;
+    transform: matrix(1,0,0,0,1,0,0);
+    transition: 0.15s cubic-bezier(0.2, 0.3, 0.25, 0.9) 0s;
+    box-sizing: border-box;
+    box-shadow: grey 2px 2px 2px 2px;
+}
+
+
+
