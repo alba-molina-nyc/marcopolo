@@ -1,0 +1,77 @@
+body {
+    margin:0;
+    height: 100%;
+    width: 100%;
+    font-family:'Open Sans', sans-serif;
+    background-color: rgb(197,203,228, 0.3);  
+}
+
+h4 {
+    font-size: 12px;
+    padding: 20px 300px 55px 500px;
+    background-color: rgb(64,87,161);
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+#top {
+    text-transform: uppercase;
+    color: rgb(240,60,29);   
+    font-weight: lighter;
+    letter-spacing: 2px;
+    word-spacing: 255px;
+    padding: 10px 30px 0px 30px;
+    text-align: center;
+}
+.copyright-container, footer {
+    font-size: 10px;
+    justify-content:end;
+    background-color: rgb(64,87,161);
+    opacity: 0.6;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    align-items: center;
+    height: 30px;
+}
+#createbtn{
+    margin: 100px 50px 150px 500px;
+    text-align: center;
+    letter-spacing: 2px;
+    
+}
+
+#right {
+    font-size: 30px;
+    color: rgb(240,60,29);   
+    font-weight:lighter;
+    padding: 20px 30px 0px ;
+    letter-spacing: 2px;
+}
+#cbm #allnfp {
+    text-decoration: none;
+}
+
+
+
+#create {
+    font-family: Tahoma;
+    font-size: 19px;
+    line-height: 30px;
+    background-color: rgb(240,60,29);
+    color: white;
+    padding: 0 20px 2px 16px;
+    display: flex;
+    box-shadow: grey 1px 1px 1px 1px;
+    width: 100px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* dashboard */

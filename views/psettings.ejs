@@ -4,42 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="/g3.css" rel="stylesheet">
+    <title>Settings</title>
 </head>
 <body>
-    <h1> How Marco Polo Uses Your Data </h1>
-
-    <h4> Manage your data and activity</h4>
-
-    <h4> Get a copy of your data </h4>
-
+<div id="logo"> Marco Polo 📦 </div>
+    <header>
+        <div id="top">
+            <a href="/resources">Search History </a> 
+            <a href="/resources">Manage your data and activity</a> 
+            <a href="/resources">Get a copy of your data</a> 
+            <a href="/dashboard">home</a>  
+            </div>
+    </header>
+    <div id="page-content"> 
+        <h1> How Marco Polo Uses Your Data</h1>
     <h4> Change Profile Picture</h4>
     <form action="/picture" method="POST" autocomplete="off"></form>
-        <label>Upload picture: 
-            <input type="text" id="picture" name="password" required>
-        </label><br>
-        <input type="submit" value="Change" id="picture">
-
+        <label>
+            <input type="text" id="picture" name="picture" value="upload new picture" required>
+        </label>
+        <input type="submit" value="Upload" id="btn">
     </form>
-
-    <h4> Search History </h4>
-
     <h4> Change Username</h4>
-    
         <form action="/username" method="POST" autocomplete="off">
-            <label>Username:
-                <input type="text" id="username" name="username" required>
-            </label><br>
-            <input type="submit" value="Change" id="username">
+            <label>
+                <input type="text" id="username" name="username" value="enter new username" required>
+            </label>
+            <input type="submit" value="Change" id="btn">
         </form>
-
     <h4> Change Password</h4>
         <form action="/password" method="POST" autocomplete="off"></form>
-            <label>Password:
-                <input type="password" id="password" name="password" required>
-            </label><br>
-            <input type="submit" value="Change" id="pwd">
+            <label>
+                <input type="password" id="password" name="password" value="enter new password" required>
+            </label>
+            <input type="submit" value="Change" id="btn">
         </form>
+        </div>
+
+ 
 
 
 </body>

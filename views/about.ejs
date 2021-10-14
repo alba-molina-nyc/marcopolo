@@ -4,37 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
-    <title>Marco Polo.io </title>
-    <header>
-        <nav>
-        <div id="top">
-            <a href="/platform"> platform </a>
-            <a href="/about"> about </a>
-            <a href="/resources"> resources </a>
-            
-                <% if(user) { %>
-                    <a href="/logout"> Logout </a>
-                <% } else { %>
-                    <a href="/login" id="login"> Login </a>
-                    <a href="/signup" id="signup"> Signup </a>
-                <% } %>
-            </nav>
-        </div>
-    </header>
-    </header>
+    <link href="/g1.css" rel="stylesheet">
+    <title>About Us</title>
 </head>
 <body>
-    <img src="logo.png" id="logo">
+    <h1 id="logo">Marco Polo</h1>
+    <header>
+        <div id="top">
+                <a href="/platform" id="platform">platform</a>
+                <a href="/about">about</a> 
+                <a href="/resources">resources</a> 
+                <% if(user) { %>
+                <a href="/logout">Logout</a>
+                <% } else { %>
+                <a href="/login" id="login">Login</a>
+                <a href="/signup" id="signup">Signup</a>
+                <% } %>   
+            </div>   
+        </header>
   <main> 
-    <h1 id="name">our story </h1>
-    <p>Marco Polo is driven by one heartfelt purpose- Helping people find their missing items or pets. It all began when our oldest son, Bennie, was going away to college, and he was frantically packing his belongings and trying to say his goodbyes. Obviously, Ollie, our treasured cat was on his top list of people to say goodbye to, but in all of the hustle and bustle, he forgot. We loaded Bennie in our pink Tesla, and off we went. We were two hours into our journey to Binghamton when we received a frantic call from our second oldest daughter, who stated that Ollie was missing, and she suspected he tried to drive our son to school with us. We pulled over, but by then, the half eaten treat bag, indicated that Ollie had been in the car with us, but likely got out during our first pit stop. As our heart stopped, and our son asked us to turn back, we realized that we needed a universal app, so that people could communicate about lost and found items in realtime, so no one had to go through this heartache again. Luckily, when we arrived at Binghamton, Ollie was waiting for us at the dorm, but we knew next time we might not be so lucky. Here’s to hoping Marco Polo will keep you and loved items and pets close for many years to come.
-    </p>
+    <h1> Our Story </h1>
+    <img src="AV.png" id="pp">
+    
+    <p>  Marco Polo is driven by one heartfelt purpose- Helping people find their missing items or pets. It all began when our oldest son, Bennie, was going away to college, and he was frantically packing his belongings and trying to say his goodbyes.  <br> </p>
+    <img src="xmas.png" id="pp">
+
+   <p>Obviously, Ollie, our treasured cat was on his top list of people to say goodbye to, but in all of the hustle and bustle, he forgot.   We loaded Bennie in our pink Tesla, and off we went. We were two hours into our journey to Binghamton when we received a frantic call from our second oldest daughter, who stated that Ollie was missing, and she suspected he tried to drive our son to school with us.  We pulled over, but by then, the half eaten treat bag, indicated that Ollie had been in the car with us, but likely got out during our first pit stop. As our heart stopped, and our son asked us to turn back, we realized that we needed a universal app, so that people could communicate about lost and found items in realtime, so no one had to go through this heartache again. </p>
+
+   <p>Luckily, when we arrived at Binghamton, Ollie was waiting for us at the dorm, but we knew next time we might not be so lucky. Here’s to hoping Marco Polo will keep you and loved items and pets close for many years to come.</p>
+  
 </main>
 
+</body>
 <div class="copyright-container">
     <footer>
-        <p>Copyright &copy; Alba <span id=“year”></span> All Rights Reserved<p></p>
+        <p>Copyright &copy; Alba <span id=“year”></span> All Rights Reserved</p> 
+        <a href="facebooklogo.png" id="fb"> 
+        <a href="linkedinlogo.png" id="lin">  
+        <a href="twitterlogo.png" id="twitter"> 
     </footer>
-</div>
 </html>

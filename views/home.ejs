@@ -4,36 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
-    <title>Marco Polo.io </title>
+    <link href="/g1.css" rel="stylesheet">
+    <title>Marco Polo 📦</title>
 </head>
 <body>
+    <h1 id="logo">Marco Polo</h1>
     <header>
-        <nav>
         <div id="top">
-            <a href="/platform">platform</a>
-            <a href="/about">about</a>
-            <a href="/resources">resources</a>
+                <a href="/platform">platform</a>
+                <a href="/about">about</a> 
+                <a href="/resources">resources</a> 
                 <% if(user) { %>
-                    <a href="/logout">Logout</a>
+                <a href="/logout">Logout</a>
                 <% } else { %>
-                    <a href="/login" id="login">Login</a>
-                    <a href="/signup" id="signup">Signup</a>
-                <% } %>
-            </nav>
-        </div>
-    </header>
-<div id="media"> 
-    <img src="logo.png" id="logo">
-    <p id="media1"> 
-        Our platform was built for everyone. With Marco Polo users can post and search by geographic location, making it especially valuable to travelers.
-    </p>
-</div>
+                <a href="/login" id="login">Login</a>
+                <a href="/signup" id="signup">Signup</a>
+                <% } %>   
+            </div>   
+        </header>
+
+    <h1>Your stuff misses you too!</h1> 
+    <img src="home.png" id="pp"> 
+
+
   
 
-    <div class="copyright-container">
-        <footer>
-            <p>Copyright &copy; Alba <span id=“year”></span> All Rights Reserved<p></p>
-        </footer>
+<p> Our platform was built for everyone. With Marco Polo users can post and search by geographic location, making it especially valuable to travelers.</p>
 
+        
+  
+
+</body>
+<div class="copyright-container">
+    <footer>
+        <p>Copyright &copy; Alba <span id=“year”></span> All Rights Reserved</p> 
+        <a href="facebooklogo.png" id="fb"> 
+        <a href="linkedinlogo.png" id="lin">  
+        <a href="twitterlogo.png" id="twitter"> 
+    </footer>
 </html>

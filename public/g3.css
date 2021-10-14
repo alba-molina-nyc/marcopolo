@@ -1,0 +1,89 @@
+body {
+    margin:0;
+    height: 100%;
+    width: 100%;
+    font-family:'Open Sans', sans-serif;
+    background-color: rgb(217,153,34);
+    opacity: 0.9;
+}
+/* everything holding buttons and boxes */
+#page-content {
+    height: 600px;
+    width: 550px;
+    padding: 50px 320px 316px 320px;
+    text-align: center;
+}
+
+h1 {
+    font-family:'Open Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 40px;
+    line-height: 55px;
+    text-align: center;
+    color: rgb(31,89,44);
+}
+/* buttons */
+#btn, #search-btn {
+    font-family: Tahoma;
+    font-size: 19px;
+    line-height: 20px;
+    background-color: rgb(240,60,29);
+    color: white;
+    padding: 0 20px 2px 16px;
+    width: 95px;
+    text-decoration: none;
+    
+}
+/* boxes */
+#username, #password, #picture, #search-input {
+    width: 250px;
+    height: 20px;
+}
+
+header {
+    font-size: 10px;
+    line-height: 14px;
+    background-position: 0% 0%;
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    bottom: 580px;
+    right: 40px;
+    display: block;
+    z-index: 20;
+    cursor:pointer;
+    text-transform: uppercase;
+}
+
+#top {
+    text-decoration: none;
+    text-align:right;
+}
+a{
+    padding: 50px 0 0 50px;
+}
+
+#logo {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: lighter;
+    color: rgb(240,60,29);   
+    padding: 10px;
+
+}
+
+h4, label {
+    color: white;
+    text-decoration: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+   
+
+
+/* login sign up settings*/

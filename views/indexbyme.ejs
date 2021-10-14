@@ -4,47 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/index.css">
-    <title> Lost and Found Posts</title>    
+    <script defer src="js/script.js"> </script>
+    <link href="/g4.css" rel="stylesheet">
+    <title> My Postings</title>    
 </head>
 <body>
-    <header> 
-        <div class="scroller">
-            <a href="/dashboard"id="home">⌂ </a>  
-            <a href="/posts/new"id="lnfp"> Create </a>   
-            <a href="/resources"id="rckt"> 🚀 </a>  
-            
+<div id="logo"> Marco Polo 📦 </div>
+<header>
+    <div id="top">
+        <a href="/dashboard">home</a>   
+        <a href="/resources">🚀</a>   
+        <a href="/posts/new"> Create a new post</a>  
+        <a href="/posts/search"> Search for a post</a>    
     </div>
-
 </header>
-<div id=page> 
 
-<h1> Lost and Found </h1>
-
-   
-<figure id="figure"> 
+<div id="page-content"> 
+    <h1> My Lost and Found Listings </h1> 
     <% posts.forEach(post => { %> 
-
     <div class="container"> 
-
-        
         <img src= "<%= post.img %>" alt="avatar" class="img">
-            <div class="overlay"> 
                 <div class="text"> 
                     <a href="/posts/<%= post._id%>"> <%= post.title %> </a>
-                    <p id="location"> <%= post.location %> </p>
+                    <h5><%= post.location %>  </h5>
                 </div>
             </div>
+            <% }); %> 
         </div>
-   
-   
-  
-
-  
-    <% }); %> </figure>
-   
-
-
-
 </body>
 </html>
