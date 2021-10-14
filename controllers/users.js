@@ -5,6 +5,13 @@ const User = require('../models/user');
 const Post = require('../models/post');
 const userSeed = require('../models/userSeed');
 
+router.get("/users/seed", (req, res) => {
+    User.deleteMany({}, (error, allUsers) => {}); 
+    User.create(userSeed, (err, data) => {
+        res.redirect("/users")
+    });
+});
+
 router.get('/users/delete', async (req, res) => {
     await User.deleteMany({});
     res.redirect('/');
