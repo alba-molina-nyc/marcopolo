@@ -6,11 +6,14 @@
 ## Outside of being the designated lost and found app, Marco Polo is different from possible alternatives out there because everything is happening under one website and it is easy to use.
 ## Whereas other websites make you go through lengthy processes to communicate with others on the site.
 # Technology USED
-## HTML
-## CSS
-## JavaScript
-## jQuery
-## CRUD
+### HTML
+### CSS
+### JavaScript
+### jQuery
+### CRUD
+### Express
+### MongoDB 
+### Mongoose
 // screenshots
 ### Getting Started
 https://shrouded-journey-38051.herokuapp.com/ - this is the link to the deployed project
