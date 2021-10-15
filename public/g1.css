@@ -35,6 +35,7 @@ body {
     font-stretch: wider;
     text-transform: uppercase;
     margin: -0px;
+
    
 }
 
@@ -107,11 +108,9 @@ a {
     text-decoration: none;
 }
 
-a:visited {
-    color: rgb(241,240,235);
+#top > a:visited {
+    color: white;
 
 }
 
-
-
-/* rgb(124,115,0) */
+/* home pages */

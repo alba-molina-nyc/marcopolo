@@ -5,40 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
+    <link href="/g5.css" rel="stylesheet">
     <title><%=post.title %></title>
 </head>
 <body> 
+    <div id="logo"> Marco Polo 📦 </div>
 <header> 
-    <div class="scroller"> 
-        <a href="/dashboard"id="home"> ⌂ </a>  
+    <div id="top">
+        <a href="/dashboard"id="home"> home </a>  
         <a href="/posts" id="bck"> Back </a>
-        <a href="/resources"id="rckt"> 🚀 </a>  
+        <a href="/resources"> 🚀 </a>  
   </div>
 </header>
-
-    <div id="post"> 
-
-    <h1 id="header"> <%=post.title %> </h1>
+<h1 id="header"> <%=post.title %> </h1>
 
 <a href="/posts/<%= post._id%>/edit"> EDIT POST </a> 
    
-
+<div id="top1">
 <p id="description"> <%=post.description %> <br>
      <img src= "<%= post.img %>" id="img">
    
 </p>
 
     
-    <h1> <%=post.location %></h1>
+    <h5> <%=post.location %></h5>
 
-
-
-    <p> 
-        
-        Created: <%=post.createdAt %> <br>
-        Updated: <%=post.updatedAt %> <br>
-     </p>
 
      <form method="POST" action="/posts/<%= post._id %>?_method=DELETE">
         <input type="submit" value="DELETE" id="deletebtn"> 
@@ -49,3 +40,23 @@
 
 </body>
 </html>
+
+  
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+   

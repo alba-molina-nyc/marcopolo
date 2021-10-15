@@ -42,6 +42,10 @@ a {
 
 #top1 {
     text-transform: uppercase;
+    display:grid;
+    width: 100%;
+    text-align: center;
+   
 
 }
 h1 {
@@ -52,7 +56,6 @@ h1 {
     font-weight: bolder;
     text-align: center;
     letter-spacing: 2px;
-    text-shadow: 1px 1px 5px grey;  
     width:100%;  
 }
 
@@ -66,39 +69,6 @@ h1 {
     padding: 10px;
 }
 
-#page-content {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-left: 40px;
-    width: 100%;
-    justify-content: space-between;
+#img {
+    width: 50%;
 }
-
-.container {
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    background: white;
-    margin-bottom: 1rem;
-    text-align: center;
-  
-}
-
-.text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: .4rem;
-}
-
-
-
-
-
-
-
-/* index, my index */

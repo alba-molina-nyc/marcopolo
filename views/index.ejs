@@ -14,13 +14,17 @@
     <div id="top">
         <a href="/dashboard">home</a>   
         <a href="/resources">🚀</a>   
-        <a href="/posts/new"> Create a new post</a>  
-        <a href="/posts/search"> Search for a post</a>    
     </div>
 </header>
+<h1> All Lost and Found Items </h1> 
+<div id="top1">
 
+<a href="/posts/new"> Create a new post</a>  <br>
+
+<br><a href="/posts/search"> Search for a post</a>    
+    </div>
 <div id="page-content"> 
-    <h1> All Lost and Found Items </h1> 
+    
     <% posts.forEach(post => { %> 
     <div class="container"> 
         <img src= "<%= post.img %>" alt="avatar" class="img">
