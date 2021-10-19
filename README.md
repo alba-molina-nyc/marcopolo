@@ -17,7 +17,7 @@
 
 ## Project Screenshots
 
-![alt website page](website-page.jpg)
+![alt website-page](website-page.png)
 
 ### Getting Started
 https://shrouded-journey-38051.herokuapp.com/ - this is the link to the deployed project
