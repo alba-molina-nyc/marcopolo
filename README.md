@@ -14,7 +14,11 @@
 ### Express
 ### MongoDB 
 ### Mongoose
-// screenshots
+
+## Project Screenshots
+
+![alt website page](website-page.jpg)
+
 ### Getting Started
 https://shrouded-journey-38051.herokuapp.com/ - this is the link to the deployed project
 # Future Enhancements
