@@ -17,7 +17,7 @@
 
 ## Project Screenshots
 
-![alt website-page](website-page.png)
+![alt website-page](https://github.com/alba-molina-nyc/marcopolo/blob/main/marcopolo%20pics/website-page.png?raw=true)
 
 ### Getting Started
 https://shrouded-journey-38051.herokuapp.com/ - this is the link to the deployed project
